@@ -32,7 +32,7 @@ div.button img:hover {
 
 footer {
     bottom: 0;
-    height: 32px;
+    height: 52px;
     left: 0;
     position: fixed;
     width: 100%;
@@ -50,3 +50,8 @@ footer {
 
 
 
+
+.footer-label {
+    text-align: center;
+    font-size: 12px;
+}

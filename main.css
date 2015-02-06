@@ -1,0 +1,52 @@
+
+body {
+    color: #fff;
+    font: 20px/1.5 'Open Sans Condensed',sans-serif;
+    background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    background-image: url(img/background.jpg);
+}
+
+.heart {
+    width: 100px;
+}
+
+.button {
+    float:right;
+    text-align: right;
+    margin-right: 20px;
+}
+
+div.logo {
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left; 
+    width: 800px;
+}
+
+div.button img:hover {
+    -webkit-filter: brightness(120%);
+}
+
+footer {
+    bottom: 0;
+    height: 32px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+}
+
+.main {
+    float:left;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+

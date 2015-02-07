@@ -114,6 +114,7 @@ $(function(){
     setInterval(function()
                {
         index = Math.floor(Math.random() * (compl.length));
+        indexYou = Math.floor(Math.random() * (you.length));
         $(".message").fadeIn(2000).delay(9000).fadeOut(2000, 
             function(){
             $( ".you" ).replaceWith( "<div class='you'>" + you[indexYou] + "</div>" );

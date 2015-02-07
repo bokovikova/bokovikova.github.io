@@ -4,9 +4,11 @@
     <link rel="icon" type="image/png" href="/img/heart_big.png" />
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="/countup/jquery.countup.css" />
+    <link rel="stylesheet" href="photobox/photobox.css">
     <script type="text/javascript" src="/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="/countup/jquery.countup.js"></script>
     <script type="text/javascript" src="/scripts.js"></script>
+    <script src='photobox/jquery.photobox.js'></script>
 </head>
 <body>
     
@@ -17,9 +19,18 @@
     </div>
     
     <div class="main">
-        <img src="/img/main.png">
+        <div id='gallery'>
+          <a href="/img/background.jpg">
+			<img src="/img/heart_big.png" alt="photo1 title">
+		  </a>
+            <a href="http://vk.com/video2830590_168837471" rel="video">
+			<img src="/img/heart_big.png" alt="photo1 title">
+		  </a>
+            <a href="http://vk.com/video_ext.php?oid=2830590&id=168837471&hash=029ace9ef1efc48e&hd=2" rel="video">
+			<img src="/img/heart_big.png" alt="photo1 title">
+		  </a>
+        </div>
     </div>
-    
     
     <div class="message">
         <div class="you">Ты</div>
@@ -31,6 +42,15 @@
         <div class="footer-label">Ровно столько дней я счастлив с тобой</div>
         <div id="countdown"></div>
     </footer>
+        
+    <script>
+		$('#gallery').photobox('a');
+		// or with a fancier selector and some settings, and a callback:
+		$('#gallery').photobox('a:first', { thumbs:false, time:0 }, imageLoaded);
+		function imageLoaded(){
+			console.log('image has been loaded...');
+		}
+	</script>
     
 </body>
 </html>

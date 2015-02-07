@@ -36,10 +36,11 @@ footer {
     left: 0;
     position: fixed;
     width: 100%;
-    z-index: 100000;
+    z-index: 9000;
 }
 
 .main {
+    margin-top: 50px;
     float:left;
     width: 100%;
     text-align: center;
@@ -54,4 +55,24 @@ footer {
 .footer-label {
     text-align: center;
     font-size: 12px;
+}
+
+.message {
+    width: 225px;
+    height: 200px;
+    background-image: url(/img/heart_big.png);
+    background-size: contain;
+    position: fixed;
+    bottom: 10;
+    right: 30;
+    text-align: center;
+    vertical-align: middle;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    display: none;
+}
+
+.you {
+    margin-top: 30px;
 }
